@@ -1,0 +1,149 @@
+.radio-group {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 2px;
+
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]+label {
+    font-size: 20px;
+}
+
+.radio-group span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid black;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    text-align: center;
+}
+
+.radio-group i {
+    opacity: 0;
+    transition: all .3s ease;
+    color: black;
+    margin-top: 2px;
+}
+
+#color-1+label span {
+    background-color: var(--teal);
+}
+
+#color-2+label span {
+    background-color: var(--green-lt);
+}
+
+#color-3+label span {
+    background-color: var(--orange);
+}
+
+#color-4+label span {
+    background-color: var(--red);
+}
+
+input[type="radio"]:checked+label span i {
+    opacity: 1;
+}
+
+
+/* LINKS in CUBE */
+
+.toy-container {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.links-cube-element {
+    width: 50%;
+    height: 69%;
+    /* perspective: 400px; */
+}
+
+.cube {
+    width: 200px;
+    height: 100px;
+    transform-style: preserve-3d;
+    transform: translateZ(-50px);
+    transition: transform 1s;
+}
+
+.cube.show-one {
+    transform: translateZ(-50px) rotateY(0deg);
+}
+
+.cube.show-two {
+    transform: translateZ(-5px) rotateY(-90deg);
+}
+
+.cube.show-three {
+    transform: translateZ(-50px) rotateY(-190deg);
+}
+
+.cube.show-four {
+    transform: translateZ(-50px) rotateY(90deg);
+}
+
+.cube-face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    line-height: 100px;
+    color: white;
+    text-align: center;
+}
+
+.one i,
+.two i,
+.three i,
+.four i,
+.five i,
+.six i {
+    font-size: 60px;
+    color: black;
+}
+
+.one {
+    background: var(--teal)
+}
+
+.two {
+    background: var(--green-lt);
+}
+
+.three {
+    background: var(--orange);
+}
+
+.four {
+    background: var(--red);
+}
+
+.one {
+    transform: rotateY(0deg) translateZ(50px);
+}
+
+.two {
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.three {
+    transform: rotateY(180deg) translateZ(50px);
+}
+
+.four {
+    transform: rotateY(-90deg) translateZ(50px);
+}

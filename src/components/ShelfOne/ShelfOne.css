@@ -1,0 +1,167 @@
+.sec-1 .shelf-container {
+    width: 100%;
+    height: 33.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.sec-1 .shelf-container .things-on-shelf {
+    height: 90%;
+    display: flex;
+}
+
+.things-on-shelf .book-links-container {
+    width: 50%;
+    height: 100%;
+}
+
+.things-on-shelf .plant-container {
+    width: 30%;
+    height: 100%;
+}
+
+.things-on-shelf .book-3-and-4-container {
+    width: 20%;
+    height: 100%;
+}
+
+/* #1 */
+
+.things-on-shelf .book-links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.book-1-container {
+    background-color: var(--teal);
+    width: 95%;
+    height: 25%;
+    margin-left: 15px;
+}
+
+.book-2-container {
+    background-color: var(--orange);
+    width: 95%;
+    height: 25%;
+}
+
+.book-1-container .book-1,
+.book-2-container .book-2,
+.book-5-container .book-5,
+.book-6-container .book-6,
+.book-7-container .book-7 {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+}
+
+
+.book-1-container .book-1 .circle,
+.book-2-container .book-2 .circle,
+.book-5-container .book-5 .circle,
+.book-6-container .book-6 .circle,
+.book-7-container .book-7 .circle {
+    background-color: var(--text);
+    width: 10%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+.book-1-container .book-1 .link-wrapper,
+.book-2-container .book-2 .link-wrapper,
+.book-5-container .book-5 .link-wrapper,
+.book-6-container .book-6 .link-wrapper,
+.book-7-container .book-7 .link-wrapper {
+    background-color: var(--text);
+    width: 80%;
+    height: 76%;
+    text-align: center;
+    padding-top: 3px;
+}
+
+/* END #1 */
+
+/* #2 with plant*/
+
+
+
+
+/* END #2 */
+
+/* #3 with books*/
+
+.things-on-shelf .book-3-and-4-container {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.book-3,
+.book-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.book-3 {
+    background-color: #25a037;
+    width: 20%;
+    height: 60%;
+    margin-right: 15px;
+    transform: rotate(20deg);
+}
+
+.book-3 .stripe-1 {
+    background-color: #1a7227;
+    width: 100%;
+    height: 8%;
+    margin-top: 5px;
+}
+
+.book-3 .stripe-2 {
+    background-color: #1a7227;
+    width: 100%;
+    height: 8%;
+    margin-bottom: 5px;
+}
+
+.book-4 {
+    background-color: var(--orange);
+    width: 30%;
+    height: 90%;
+    margin-right: 5px;
+}
+
+.book-4 .stripe-1 {
+    background-color: var(--tbl);
+    width: 100%;
+    height: 8%;
+    margin-top: 5px;
+}
+
+.book-4 .stripe-2 {
+    background-color: var(--tbl);
+    width: 100%;
+    height: 8%;
+    margin-bottom: 5px;
+}
+
+/* END #3 */
+
+.shelf-1,
+.shelf-2,
+.shelf-3 {
+    height: 10%;
+    width: 100%;
+    border: 1px solid black;
+    background-color: var(--tbl);
+    border-radius: 5px;
+    box-shadow: 0 24px 20px -6px black;
+}
