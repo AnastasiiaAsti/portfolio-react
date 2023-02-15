@@ -1,5 +1,4 @@
 import "./ShelfOne.css";
-import Plant from "../Plant/Plant";
 
 export default function ShelfOne() {
   return (
@@ -26,7 +25,18 @@ export default function ShelfOne() {
           </div>
         </div>
         {/* <!-- book links END --> */}
-        <Plant />
+        {/* <!-- plant Container --> */}
+        <div className="plant-container">
+          <div className="base">
+            <div className="flowerpot"></div>
+            <div className="blade blade-center"></div>
+            <div className="blade blade-left-s"></div>
+            <div className="blade blade-right-s"></div>
+            <div className="blade blade-left-l"></div>
+            <div className="blade blade-right-l"></div>
+          </div>
+        </div>
+        {/* <!-- plant container ends --> */}
         {/* <!-- book 3&4 container --> */}
         <div className="book-3-and-4-container">
           <div className="book-3">
