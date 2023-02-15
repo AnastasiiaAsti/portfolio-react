@@ -1,4 +1,5 @@
 import "./SectionOne.css";
+import Plant from "../Plant/Plant";
 
 export default function SectionOne() {
   return (
@@ -26,18 +27,7 @@ export default function SectionOne() {
             </div>
           </div>
           {/* <!-- book links END --> */}
-          {/* <!-- plant Container --> */}
-          <div class="plant-container">
-            <div class="base">
-              <div class="flowerpot"></div>
-              <div class="blade blade-center"></div>
-              <div class="blade blade-left-s"></div>
-              <div class="blade blade-right-s"></div>
-              <div class="blade blade-left-l"></div>
-              <div class="blade blade-right-l"></div>
-            </div>
-          </div>
-          {/* <!-- plant container ends --> */}
+          <Plant />
           {/* <!-- book 3&4 container --> */}
           <div class="book-3-and-4-container">
             <div class="book-3">
